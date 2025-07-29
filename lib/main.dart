@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project/latihan_kombinasi/latihan_jadwal.dart';
 import 'package:project/main_layout.dart';
-import 'package:project/stack_widget/stack_tiga.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,10 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, 
-      home: StackThree()
-      );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: JadwalPiket());
   }
 }
 

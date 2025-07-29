@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/main_layout.dart';
+import 'package:project/stack_widget/stack_tiga.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HelloFlutter()
-    );
+      debugShowCheckedModeBanner: false, 
+      home: StackThree()
+      );
   }
 }
 
@@ -27,12 +28,14 @@ class HelloFlutter extends StatelessWidget {
     return MainLayout(
       title: 'Belajar Flutter',
       body: Center(
-        child: Text('Hello Flutter', style: TextStyle(
-          fontSize: 24, 
-          backgroundColor: const Color.fromARGB(255, 152, 114, 255),
-          color: Colors.white,
-          fontWeight: FontWeight.bold),
-          ),
+        child: Text(
+          'Hello Flutter',
+          style: TextStyle(
+              fontSize: 24,
+              backgroundColor: const Color.fromARGB(255, 152, 114, 255),
+              color: Colors.white,
+              fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project/latihan_kombinasi/latihan_jadwal.dart';
+import 'package:project/grid_view/grid_screen.dart';
 import 'package:project/main_layout.dart';
 
 void main() {
@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: JadwalPiket());
+    return MaterialApp(
+        debugShowCheckedModeBanner: false, home: GridProductPage());
   }
 }
 
